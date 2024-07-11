@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex8 motion of ball</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 60vh;
+            background-color: aquamarine;
+        }
+
+.box{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top:364px;
+    
+background-color: rgb(254, 7, 7);
+animation: xanimation 3s linear  infinite,yanimation  1s linear  infinite alternate;
+    
+}
+
+@keyframes xanimation{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+    
+}
+@keyframes yanimation{
+    from{
+        top:0;
+
+    }to{
+        bottom: 100%;
+    } 
+    }
+
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
